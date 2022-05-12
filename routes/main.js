@@ -24,6 +24,15 @@ router.get('/contact', (req,res) => {
     res.render('site/contact')  
 
 })
+router.get('/posts/new', (req,res) => {
+    res.render('site/addpost')  
+
+})
+
+router.get('/posts/test', (req,res) => {
+    res.render('/')  
+
+})
 
 
 module.exports = router

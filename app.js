@@ -7,14 +7,14 @@ const hostname ='127.0.0.1'
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://127.0.0.1/blogum_db',{
+mongoose.connect('mongodb://127.0.0.1/blogg_db',{
     //hazır kod parçaları
     useNewUrlParser: true,     
     useUnifiedTopology: true,
    
 })
 
-app.use(express.static('public')) //statik dosyalarsı okuttuk cssler vs.vs.
+app.use(express.static('public')) //statik dosyalarsı okuttukk cssler vs.vs.
 
 app.engine('handlebars', exphbs.engine()); 
 app.set('view engine', 'handlebars');
@@ -43,6 +43,11 @@ app.get('/register', (req,res) => {
     res.render('site/register')
 })
 
+app.get('/posts/new', (req,res) => {
+    res.render('site/addpost')
+})
+
+
 
 // app.get('/', (req, res) => {
 //     res.send('İndex sayfasi')
@@ -70,23 +75,23 @@ app.get('/register', (req,res) => {
 
 
 
-app.get('/blog', (req,res) => {
-    res.sendFile(path.resolve(__dirname, 'site/blog.html'))
-})
+// app.get('/blog', (req,res) => {
+//     res.sendFile(path.resolve(__dirname, 'site/blog.html'))
+// })
 
 // app.get('/about', (req,res) => {
 //     res.sendFile(path.resolve(__dirname, 'site/about.html'))
 // })
 
 
-app.get('/users/:userID/movies/:moviesID', (req,res) => {
-    res.send(
-        `
-        <h1> kullanıcı adı: ${req.params.userID}</h1>
-        <h1> film adı: ${req.params.moviesID}</h1>
-        `
-    )
-})
+// app.get('/users/:userID/movies/:moviesID', (req,res) => {
+//     res.send(
+//         `
+//         <h1> kullanıcı adı: ${req.params.userID}</h1>
+//         <h1> film adı: ${req.params.moviesID}</h1>
+//         `
+//     )
+// })
 
 app.listen(port, hostname, () => console.log(` Server running, http://${hostname}:${port}/`))
 
@@ -114,6 +119,7 @@ app.listen(port, hostname, () => console.log(` Server running, http://${hostname
 //         res.end(notFoundPage)
 //     }
 // })
+
 
 // server.listen(port, hostname, () => {
 //     console.log(`Server Çalışıyor, http://${hostname}:${port}!`)
