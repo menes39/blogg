@@ -1,16 +1,9 @@
-/*
-THEME NAME: DEVOX
-AUTHOR: ARIN YAZILIM
-*/
 
-/*----------------
-GENERAL SETTINGS
------------------*/
 body {
 	font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     overflow-x: hidden;
-    color: #868f9b;
+    color: #2a2a2a;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -39,7 +32,7 @@ h6 {
 }
 
 a{
-    color: #FD8A10;
+    color: #f8f9fa!important;
     text-decoration: none;
     transition: .2s opacity;
     font-size: 16px;
@@ -49,11 +42,11 @@ a:hover, a:focus {
     text-decoration: none;
     outline: none;
     opacity: 0.8;
-    color: #FD8A10;
+    color: #77e2e2;
 }
 
 .main-color {
-    color: #FD8A10;
+    color: #77e2e2;
 }
 
 .white-text {
@@ -62,12 +55,12 @@ a:hover, a:focus {
 
 
 ::moz-selection {
-    background-color: #FD8A10;
+    background-color: #117a8b;
     color: #fff;
 }
 
 ::selection {
-    background-color: #FD8A10;
+    background-color: #117a8b;
     color: #fff;
 } 
 
@@ -102,7 +95,7 @@ section {
     display: block;
     height: 3px;
     width: 60px;
-    background-color: #FD8A10;
+    background-color: #117a8b;
     margin: 20px auto 0;
 }
 
@@ -115,7 +108,7 @@ section {
 }
 
 .navbar-brand:hover {
-	color: #FD8A10!important;
+	color:#117a8b!important;
 }
 
 #mainNav {
@@ -137,7 +130,7 @@ nav.navbar-container {
 	text-transform: uppercase;
 	color: white;
 	border: 0;
-	background-color: #FD8A10;
+	background-color: #117a8b;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -151,11 +144,11 @@ nav.navbar-container {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-	color: #FD8A10;
+	color: #77e2e2;
 }
 
 nav.shrink {
-    background-color: #FD8A10!important;
+    background-color: #117a8b!important;
 }
 
 
@@ -176,7 +169,7 @@ nav.shrink {
 #hero {
 	text-align: center;
 	color: white;
-	background: linear-gradient( rgba(20, 20, 20, .8), rgba(20, 20, 20, .8)), url("../img/heroImage.jpg");
+	background: linear-gradient( rgba(20, 20, 20, .8), rgba(20, 20, 20, .8)), url("../img/sözlük.avif");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -220,13 +213,13 @@ nav.shrink {
 }
 
 .main-btn {
-    background-color: #FD8A10;
+    background-color: #77e2e2;
     color: #fff;
 }
 
 .white-btn {
     background-color: #fff;
-    color: #FD8A10;
+    color: #77e2e2;
 }
 
 .main-btn:hover, .white-btn:hover {
@@ -249,7 +242,7 @@ nav.shrink {
 
 .about i {
 	font-size: 36px;
-	color: #fd8a10;
+	color: #117a8b;
 	margin-bottom: 20px;
 }
 
@@ -287,13 +280,13 @@ nav.shrink {
 }
 
 .feature:hover i {
-    color: #fd8a10;
+    color: #117a8b;
     transform: translateX(-32px);
 }
 
 .feature h5 {
     font-weight: 300;
-    color: #fd8a10;
+    color: #117a8b;
     margin: 0 0 6px 0;
 }
 
@@ -301,22 +294,7 @@ nav.shrink {
     color: #2a2a2a;
 }
 
-/* ---------------------------
-# Statement Section
------------------------------*/
 
-#statement {
-    background: linear-gradient( rgba(20, 20 ,20 , .9), rgba(20, 20 ,20 , .9)),
-    url("../img/statementBG.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-}
-
-#statement h4 {
-    color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Footer
@@ -326,7 +304,7 @@ footer {
 	position: relative;
 	padding-top: 80px;
 	padding-bottom: 80px;
-	background-color: #2a2a2a;
+	background-color: #117a8b;
 }
 
 .footer-follow {
@@ -341,7 +319,7 @@ footer {
 }
 
 .footer-follow i {
-	color: #FD8A10;
+	color: #eee;
 }
 
 .footer-follow li a {
@@ -402,7 +380,7 @@ ABOUT US SECTION
 }
 
 .bg-main {
-background-color: #fd8a10;
+background-color: #354052;
 
 }
 
@@ -694,7 +672,7 @@ BLOG SECTION
 
 .widget-category a span {
     float: right;
-    color: #FD8A10;
+    color: #117a8b;
 }
 
 .widget-category a:hover {
@@ -749,7 +727,7 @@ BLOG SECTION
 .widget-post .blog-meta li {
     display: inline-block;
     margin-right: 5px;
-    color: #FD8A10;
+    color: #117a8b;
     font-size: 12px;
 }
 
