@@ -2,7 +2,8 @@ const path = require('path')
 const express = require('express')
 const exphbs = require('express-handlebars')
 const app = express()
-const port = 'https://git.heroku.com/blogggmenes.git'
+const port = '3000'
+const linkim = 'https://blogggmenes.herokuapp.com/'
 const hostname ='127.0.0.1'
 const mongoose = require('mongoose');
 
@@ -93,7 +94,7 @@ app.get('/posts/new', (req,res) => {
 //     )
 // })
 
-app.listen(port, hostname, () => console.log(` Server running, http://${hostname}:${port}/`))
+app.listen(process.env.linkim || port, hostname, () => console.log(` Server running, http://${hostname}:${port}/`))
 
 // const http = require('http')
 // const fs = require('fs')
